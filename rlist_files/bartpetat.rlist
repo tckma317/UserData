@@ -9,9 +9,11 @@ NLD RS5 Gro Del
 NLD RS7 Gro Vee
 NLD RS11 Nij Roe
 NLD RS12 Roe MaaRan
+NLD RE13 DEU/NLD Ven
 NLD RS15 Sit Hee
 NLD RE18 Maa NLD/DEU
 NLD RS18 MaaRan KerCen
+NLD RE19 DEU/NLD ArnCen
 NLD RE20 Zwo Emm
 NLD RS20 Zwo Emm
 NLD RS21 Alm Har
@@ -23,6 +25,8 @@ NLD RS31 Zut Win
 NLD RS32 ArnCen Win
 NLD RS33 ArnCen Tiel
 NLD RS34 AmeCen EdeWag
+NLD RB61 DEU/NLD Hen
+NLD RB64 DEU/NLD Ens
 
 NLD S32Ant Roo NLD/BEL
 NLD S43Lie BEL/NLD Maa
@@ -185,6 +189,8 @@ DEU-HB 10Bre MoorStr Hbf
 
 
 ##  NI - Niedersachsen
+DEU-NI RB61 NW/NI NI/NW
+DEU-NI RB61Bad NW/NI DEU/NLD
 
 
 ##  NW - Nordrhein-Westfalen
@@ -194,7 +200,17 @@ DEU-NW SkyTrn FernBf TerC
 DEU-NW HB211 TecZen EicHof
 DEU-NW HB212 CamNord CamSud
 
+DEU-NW RE9 AacHbf NW/RP
+DEU-NW RE9Opp NW/RP RP/NW
+DEU-NW RE9Sie RP/NW SieHbf
+DEU-NW RE13 NLD/DEU +SKIP_WupTalLanFeld
 DEU-NW RE18 NLD/DEU AacHbf
+DEU-NW RE19 DusDorfHbf DEU/NLD
+DEU-NW RE34 DortMundHbf SieHbf
+DEU-NW RB61 BieHbf +SKIP_HidSch
+DEU-NW RB61 +DIV_RE60 NW/NI
+DEU-NW RB61Rhe NI/NW NW/NI
+DEU-NW RB64 MunHbf DEU/NLD
 
 DEU-NW S1 DortmundHbf DusseldorfOberbilk
 DEU-NW S5 DortMundHbf +DIV_HagN
@@ -216,6 +232,8 @@ DEU-NW U73 GerresheimS AufHardtLVRKlinikum
 
 
 ##  RP - Rheinland-Pfalz
+DEU-RP RE9 NW/RP RP/NW
+DEU-RP RE9Fur NW/RP RP/NW
 
 
 ##  SL - Saarland
@@ -386,6 +404,7 @@ IL BroLn Chi AdaWab
 # JAPAN
 # Highspeed
 JPN TokaidoShin Tokyo Kyoto
+JPN SanyoShin Fukuyama Hakata
 
 # Metro
 #Tokyo
@@ -399,21 +418,34 @@ JPN AsakusaLn A13 A20
 #Kyoto
 JPN KarasumaLn K09 K11
 
+#Fukuoka
+JPN NanakumaLn N11 N18
+JPN KukoLn K06 K09
+JPN NnrTenjinLn T01 T13
+JPN NnrDazaifuLn T13 D02
+JPN KashiiLn JD01 JD06
+JPN KagoshimaLnN JA31 00
+
+#Hiroshima
+JPN SanyoLn W14/X14 X20/G16
+JPN SanyoLn G01/R01 R10
+JPN Hiroden2 M4 M39
+
 # HONG KONG
 #HK Tramways
 HKG 1 WesMar ShauKeiWan
 HKG 2 PatSt_A ShauKeiWan
-HKG 3 ShekTongTsui +DIV_12A
-HKG 3 NorPoiTer ForHill_B
+HKG 3 ShekTongTsui ForHill_B
 HKG 4 ShekTongTsui CauBayTer
 HKG 5 KenTownTer TonRd_B
 HKG 6 KenTownTer ShauKeiWan
 HKG 7 KenTownTer WesMar
 
 #HK MTR Tram
-HKG 505 SamShi TownCen
+HKG 505 SamShi ChiChu_B
 HKG 507 TuenMunFryPier SuiLun
-HKG 614 PuiTo +DIV_751/761
+HKG 610 TuenMunFryPier YuenLong
+HKG 614 TuenMunFryPier YuenLong
 HKG 615 TuenMunFryPier YuenLong
 HKG 705 TinShuiWai_A WetPark
 HKG 706 TinYat TinSau
@@ -437,7 +469,7 @@ HKG TWLn Cen TsuWan
 
 #HK Others
 #HKG NPCC TC NP
-#HKG OPCC Wat Sum
+HKG OPOE Wat Sum
 HKG PT Peak CenTer
 HKG HKGAPM T1E T1Mid
 

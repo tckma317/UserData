@@ -65,13 +65,16 @@ TX RedLn DalZoo LovLn
 #MAX Light Rail
 OR OraLn UniStaGliSt Park
 OR RedLn RoseQuaTraCen PorIntAir
-OR YelLn PSUSouCol ExpoCen
+OR YelLn PSUSou ExpoCen
 
 #METRO Transit Light Rail
 MN BlueLine MallofAmerica TargetFieldPlatform2
 MN GreenLine TargetFieldPlatform2 UnionDepot
 
 #Streetcars
+
+#Kenosha Streetcar
+WI KenStr 11thAve54thSt_S 11thAve54thSt_N
 
 #McKinney Avenue Transit Authority
 TX MLnTro Upt_W Upt_E
@@ -84,6 +87,9 @@ DEU-BE M1 UOraBurTor KupGra
 DEU-BE M5 UOraBurTor UAlePla
 
 #Other Services
+
+#Europe Airport People Movers
+ITA-LAZ SkyBri Ter3 BorAreaE
 
 #United States Airside Airport Rail Systems
 CO DENTrn JepTer CGat
@@ -99,3 +105,6 @@ CO RoyGorRou CanCity Par
 
 #Seattle Center Monorail
 WA SeaCenMon SeaCen WesCen
+
+
+
